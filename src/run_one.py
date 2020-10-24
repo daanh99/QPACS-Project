@@ -41,4 +41,4 @@ for cpu_cores in [2, 4]:
                 cloud_index = get_next_cloud()
                 region = get_next_region()
         # subprocess.call(f'start C:\\Users\\sande\\Documents\\Courses\\2020-2021\\QPEC\\QPACS-Project\\venv\\Scripts\\python.exe src\\find_runtime_one.py {cloud_index} {region} {cpu_cores} {amount_ram} lenet5 64', shell=True)
-                subprocess.call(f'start C:\\Users\\sande\\Documents\\Courses\\2020-2021\\QPEC\\QPACS-Project\\venv\\Scripts\\python.exe src\\find_runtime_one.py {cloud_index} {region} {cpu_cores} {amount_ram} {network} {batch_size}', shell=True)
+                subprocess.call(f'start venv\\Scripts\\python.exe src\\find_runtime_one.py {cloud_index} {region} {cpu_cores} {amount_ram} {network} {batch_size}', shell=True)

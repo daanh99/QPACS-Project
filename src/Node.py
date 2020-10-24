@@ -26,7 +26,8 @@ class Node(ABC):
                     location = loc
                     break
             if location is None:
-                raise RuntimeError("Your region was not found!")
+                self.destroy()
+                raise SSHNodeError("Your region was not found!")
         self.disk = self.driver.create_volume(40, f"boot-{self.name}", image=self.cloud_info.disk_name, location=location)
         self.node = self.driver.create_node(name, 'n2-standard-4', None, location=location, ex_boot_disk=self.disk)
         self.driver.wait_until_running([self.node])

@@ -2,6 +2,7 @@ from dataclasses import dataclass
 from typing import List, Tuple, Optional
 
 import io
+import os
 import random
 import socket
 import string
@@ -32,7 +33,9 @@ class ExperimentOptions:
         self.network = network
         self.batch_size = batch_size
         self.amount_nodes = amount_nodes
-        self.filename = f"nodes{amount_nodes}-cores{cpu_cores}-memory{amount_ram}-network{network}-batchsize{batch_size}.log"
+
+    def get_filename(self):
+        return f"nodes{self.amount_nodes}-cores{self.cpu_cores}-memory{self.amount_ram}-network{self.network}-batchsize{self.batch_size}.log"
 
 
 def run_command(ssh: SSHClient, command: str):
@@ -50,13 +53,27 @@ class Master:
     privip: str
 
 
+def read_log_file(file_name: str):
+    with io.open(file_name, mode='r', encoding='utf-8') as file:
+        file.seek(0, os.SEEK_END)
+        file.seek(file.tell() - 1048, os.SEEK_SET)
+        last_data = file.read()
+
+    str_to_find = 'Wall clock time is '
+    start_of_number = last_data.index(str_to_find) + len(str_to_find)
+    next_space_index = last_data.index(' ', start_of_number)
+
+    return float(last_data[start_of_number:next_space_index])
+
+
 def execute_experiment(master: Master, slaves: List[SSHClient], options: ExperimentOptions) -> float:
+    run_command(master.ssh, '/home/am72ghiassi/bd/spark/sbin/start-master.sh')
     for slave in slaves:
         run_command(slave, f'/home/am72ghiassi/bd/spark/sbin/start-slave.sh spark://{master.privip}:7077')
 
     max_epochs = 50
     command = f"/home/{home_user}/bd/spark/bin/spark-submit --master spark://{master.privip}:7077 --driver-cores 1 " + \
-        f"--driver-memory 1G --total-executor-cores {options.amount_nodes * options.cpu_cores} --executor-cores {options.cpu_cores} --executor-memory {options.amount_ram}M " + \
+        f"--driver-memory 1G --total-executor-cores {options.amount_nodes} --executor-cores {options.cpu_cores} --executor-memory {options.amount_ram}M " + \
         f"--py-files /home/{home_user}/bd/spark/lib/bigdl-0.11.0-python-api.zip,/home/{home_user}/bd/codes/{options.network}.py " + \
         f"--properties-file /home/{home_user}/bd/spark/conf/spark-bigdl.conf " + \
         f"--jars /home/{home_user}/bd/spark/lib/bigdl-SPARK_2.3-0.11.0-jar-with-dependencies.jar " + \
@@ -76,21 +93,27 @@ def execute_experiment(master: Master, slaves: List[SSHClient], options: Experim
     except socket.timeout:
         print("Socket timeout")
     # master.cancel()
+    run_command(master.ssh, '/home/am72ghiassi/bd/spark/sbin/stop-master.sh')
     sftp = master.ssh.open_sftp()
-    sftp.get(f'{ex_id}-{options.filename}', f'raw/{ex_id}/{options.filename}')
+    local_file_name = f'raw/binsearch/{options.filename}'
+    sftp.get(f'{ex_id}-{options.filename}', local_file_name)
+    duration = read_log_file(local_file_name)
 
     for slave in slaves:
         run_command(slave, f'/home/am72ghiassi/bd/spark/sbin/stop-slave.sh')
 
+    return duration
+
 
 def perform_binary_search(master: Master, slaves: List[SSHClient], options: ExperimentOptions) -> int:
     options.amount_nodes = 1
-    durations = {0: -1, 1: execute_experiment(options)}
+    durations = {0: -1, 1: read_log_file(options.get_filename())}
+    print(f"Got a ground truth of {durations}")
 
-    upper_bound = len(slaves)
+    upper_bound = len(slaves) * 4
     lower_bound = 1
     while True:
-        mid = int(lower_bound + (upper_bound - lower_bound) / 2)
+        mid = int(lower_bound + (upper_bound - lower_bound) / 2) + 1
 
         if mid in durations and mid - 1 in durations:
             return mid
