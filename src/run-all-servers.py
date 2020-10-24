@@ -15,8 +15,6 @@ from paramiko import SSHClient
 from paramiko.buffered_pipe import PipeTimeout
 
 from src.GoogleCloudInfo import GoogleCloudInfo, cloud_info_list
-from src.MasterNode import MasterNode
-from src.SlaveNode import SlaveNode
 
 ComputeEngine = get_driver(Provider.GCE)
 
@@ -24,6 +22,8 @@ home_user = 'am72ghiassi'
 ex_id = ''.join(random.choice(string.ascii_lowercase) for i in range(8))  # Generate a random project id
 EX_RUNTIME = 300  # seconds
 print(f"Experiment ID: {ex_id}")
+
+os.makedirs(f"raw/{ex_id}", exist_ok=True)
 
 
 class ExperimentOptions:
@@ -107,7 +107,12 @@ def execute_experiment(master: Master, slaves: List[SSHClient], options: Experim
 
 def perform_binary_search(master: Master, slaves: List[SSHClient], options: ExperimentOptions) -> int:
     options.amount_nodes = 1
-    durations = {0: -1, 1: read_log_file(options.get_filename())}
+    durations = {
+        0: -1,
+        1: (read_log_file(f'/raw/one/{options.get_filename()}')
+            + read_log_file(f'/raw/one_second/{options.get_filename()}')
+            + read_log_file(f'/raw/one_first/{options.get_filename()}')) / 3.0,
+    }
     print(f"Got a ground truth of {durations}")
 
     upper_bound = len(slaves) * 4

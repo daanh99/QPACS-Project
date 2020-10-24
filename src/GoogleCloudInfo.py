@@ -45,7 +45,7 @@ class GoogleCloudInfo:
 
 
 cloud_info_list = [
-    GoogleCloudInfo('sajvanleeuwen', 'tu-disk', 'keys/sander.json', 'keys/sander_ssh_key', 100),
-    GoogleCloudInfo('daanhofman1', 'image-cs4215', 'keys/daan.json', 'keys/daan_ssh_key', 32),
-    GoogleCloudInfo('kawin_zheng', 'image-1', 'keys/kawin.json', 'keys/kawin_ssh_key', 100)
+    GoogleCloudInfo('sajvanleeuwen', 'image-1', 'keys/sander.json', 'keys/sander_ssh_key', 100),
+    GoogleCloudInfo('daanhofman', 'image-1', 'keys/daan.json', 'keys/daan_ssh_key', 32),
+    GoogleCloudInfo('kawin_zheng', 'image-1', 'keys/kawin.json', 'keys/kawin_ssh_key', 100),
 ]
