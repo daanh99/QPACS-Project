@@ -1,0 +1,1291 @@
+2020-10-25 15:10:32 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2020-10-25 15:10:32 INFO  SparkContext:54 - Running Spark version 2.3.1
+2020-10-25 15:10:32 INFO  SparkContext:54 - Submitted application: lenet5
+2020-10-25 15:10:32 INFO  SecurityManager:54 - Changing view acls to: sajvanleeuwen
+2020-10-25 15:10:32 INFO  SecurityManager:54 - Changing modify acls to: sajvanleeuwen
+2020-10-25 15:10:32 INFO  SecurityManager:54 - Changing view acls groups to: 
+2020-10-25 15:10:32 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2020-10-25 15:10:32 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(sajvanleeuwen); groups with view permissions: Set(); users  with modify permissions: Set(sajvanleeuwen); groups with modify permissions: Set()
+2020-10-25 15:10:33 INFO  Utils:54 - Successfully started service 'sparkDriver' on port 43759.
+2020-10-25 15:10:33 INFO  SparkEnv:54 - Registering MapOutputTracker
+2020-10-25 15:10:33 INFO  SparkEnv:54 - Registering BlockManagerMaster
+2020-10-25 15:10:33 INFO  BlockManagerMasterEndpoint:54 - Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+2020-10-25 15:10:33 INFO  BlockManagerMasterEndpoint:54 - BlockManagerMasterEndpoint up
+2020-10-25 15:10:33 INFO  DiskBlockManager:54 - Created local directory at /tmp/blockmgr-8391a274-404f-4474-ac3e-e8ee7f8eb2ee
+2020-10-25 15:10:33 INFO  MemoryStore:54 - MemoryStore started with capacity 6.2 GB
+2020-10-25 15:10:33 INFO  SparkEnv:54 - Registering OutputCommitCoordinator
+2020-10-25 15:10:33 INFO  log:192 - Logging initialized @1982ms
+2020-10-25 15:10:33 INFO  Server:346 - jetty-9.3.z-SNAPSHOT
+2020-10-25 15:10:33 INFO  Server:414 - Started @2058ms
+2020-10-25 15:10:33 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+2020-10-25 15:10:33 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+2020-10-25 15:10:33 WARN  Utils:66 - Service 'SparkUI' could not bind on port 4042. Attempting port 4043.
+2020-10-25 15:10:33 INFO  AbstractConnector:278 - Started ServerConnector@1f2abe24{HTTP/1.1,[http/1.1]}{0.0.0.0:4043}
+2020-10-25 15:10:33 INFO  Utils:54 - Successfully started service 'SparkUI' on port 4043.
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7ba898d7{/jobs,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2e1c2b55{/jobs/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@274d7236{/jobs/job,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@407191d2{/jobs/job/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@f784c0a{/stages,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@43e84311{/stages/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2231de50{/stages/stage,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@22a602a3{/stages/stage/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@e499bf9{/stages/pool,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@7192a2e9{/stages/pool/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6b3736ed{/storage,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@79968232{/storage/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3b4258aa{/storage/rdd,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5fa320c1{/storage/rdd/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@d71e586{/environment,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@40bb6108{/environment/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@6995f6bd{/executors,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2ff67666{/executors/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@2da9ebcb{/executors/threadDump,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@36016c57{/executors/threadDump/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@70e74434{/static,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@300d0be6{/,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@33b074c2{/api,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@3cb4e11d{/jobs/job/kill,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@19ea46f2{/stages/stage/kill,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://master-potmaacv-1.us-east1-b.c.myproject-293521.internal:4043
+2020-10-25 15:10:33 INFO  SparkContext:54 - Added JAR file:///home/am72ghiassi/bd/spark/lib/bigdl-SPARK_2.3-0.11.0-jar-with-dependencies.jar at spark://master-potmaacv-1.us-east1-b.c.myproject-293521.internal:43759/jars/bigdl-SPARK_2.3-0.11.0-jar-with-dependencies.jar with timestamp 1603638633475
+2020-10-25 15:10:33 INFO  SparkContext:54 - Added file file:/home/am72ghiassi/bd/codes/lenet5.py at spark://master-potmaacv-1.us-east1-b.c.myproject-293521.internal:43759/files/lenet5.py with timestamp 1603638633514
+2020-10-25 15:10:33 INFO  Utils:54 - Copying /home/am72ghiassi/bd/codes/lenet5.py to /tmp/spark-e08f3c1b-3085-4aa9-9db2-a174057ee783/userFiles-c45c25bf-4ef1-4015-b5c5-38a511934e38/lenet5.py
+2020-10-25 15:10:33 INFO  SparkContext:54 - Added file file:///home/am72ghiassi/bd/spark/lib/bigdl-0.11.0-python-api.zip at spark://master-potmaacv-1.us-east1-b.c.myproject-293521.internal:43759/files/bigdl-0.11.0-python-api.zip with timestamp 1603638633522
+2020-10-25 15:10:33 INFO  Utils:54 - Copying /home/am72ghiassi/bd/spark/lib/bigdl-0.11.0-python-api.zip to /tmp/spark-e08f3c1b-3085-4aa9-9db2-a174057ee783/userFiles-c45c25bf-4ef1-4015-b5c5-38a511934e38/bigdl-0.11.0-python-api.zip
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Connecting to master spark://10.142.0.14:7077...
+2020-10-25 15:10:33 INFO  TransportClientFactory:267 - Successfully created connection to /10.142.0.14:7077 after 29 ms (0 ms spent in bootstraps)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Connected to Spark cluster with app ID app-20201025151033-0000
+2020-10-25 15:10:33 INFO  Utils:54 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 41167.
+2020-10-25 15:10:33 INFO  NettyBlockTransferService:54 - Server created on master-potmaacv-1.us-east1-b.c.myproject-293521.internal:41167
+2020-10-25 15:10:33 INFO  BlockManager:54 - Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/0 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/0 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/1 on worker-20201025150926-10.128.0.15-42249 (10.128.0.15:42249) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/1 on hostPort 10.128.0.15:42249 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  BlockManagerMaster:54 - Registering BlockManager BlockManagerId(driver, master-potmaacv-1.us-east1-b.c.myproject-293521.internal, 41167, None)
+2020-10-25 15:10:33 INFO  BlockManagerMasterEndpoint:54 - Registering block manager master-potmaacv-1.us-east1-b.c.myproject-293521.internal:41167 with 6.2 GB RAM, BlockManagerId(driver, master-potmaacv-1.us-east1-b.c.myproject-293521.internal, 41167, None)
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/2 on worker-20201025150915-10.132.0.6-39109 (10.132.0.6:39109) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/2 on hostPort 10.132.0.6:39109 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/3 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/3 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/4 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/4 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/5 on worker-20201025150932-10.142.0.11-40747 (10.142.0.11:40747) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/5 on hostPort 10.142.0.11:40747 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/6 on worker-20201025150912-10.138.0.4-39757 (10.138.0.4:39757) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/6 on hostPort 10.138.0.4:39757 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/7 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/7 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/8 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/8 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/9 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:33 INFO  BlockManagerMaster:54 - Registered BlockManager BlockManagerId(driver, master-potmaacv-1.us-east1-b.c.myproject-293521.internal, 41167, None)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/9 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  BlockManager:54 - Initialized BlockManager: BlockManagerId(driver, master-potmaacv-1.us-east1-b.c.myproject-293521.internal, 41167, None)
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/10 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/10 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/11 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/11 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/12 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/12 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/13 on worker-20201025150940-10.164.0.2-34641 (10.164.0.2:34641) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/13 on hostPort 10.164.0.2:34641 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/14 on worker-20201025150910-10.138.0.5-42963 (10.138.0.5:42963) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/14 on hostPort 10.138.0.5:42963 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/15 on worker-20201025150918-10.132.0.7-37987 (10.132.0.7:37987) with 2 core(s)
+2020-10-25 15:10:33 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/15 on hostPort 10.132.0.7:37987 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/0 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/5 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/9 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/7 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/1 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/4 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/8 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/6 is now RUNNING
+2020-10-25 15:10:33 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@35fec246{/metrics/json,null,AVAILABLE,@Spark}
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/2 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/14 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/10 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/15 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/13 is now RUNNING
+2020-10-25 15:10:33 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/11 is now RUNNING
+2020-10-25 15:10:34 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/3 is now RUNNING
+2020-10-25 15:10:34 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/12 is now RUNNING
+2020-10-25 15:10:35 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/12 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:35 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/12 removed: Command exited with code 1
+2020-10-25 15:10:35 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/16 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:35 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/16 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:35 INFO  BlockManagerMaster:54 - Removal of executor 12 requested
+2020-10-25 15:10:35 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 12
+2020-10-25 15:10:35 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 12 from BlockManagerMaster.
+2020-10-25 15:10:35 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/3 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:35 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/3 removed: Command exited with code 1
+2020-10-25 15:10:35 INFO  BlockManagerMaster:54 - Removal of executor 3 requested
+2020-10-25 15:10:35 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 3 from BlockManagerMaster.
+2020-10-25 15:10:35 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 3
+2020-10-25 15:10:35 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/17 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:35 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/17 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:35 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/16 is now RUNNING
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/17 is now RUNNING
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/0 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/0 removed: Command exited with code 1
+2020-10-25 15:10:36 INFO  BlockManagerMaster:54 - Removal of executor 0 requested
+2020-10-25 15:10:36 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 0
+2020-10-25 15:10:36 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 0 from BlockManagerMaster.
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/18 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/18 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/18 is now RUNNING
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/9 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/9 removed: Command exited with code 1
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/19 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/19 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:36 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 9 from BlockManagerMaster.
+2020-10-25 15:10:36 INFO  BlockManagerMaster:54 - Removal of executor 9 requested
+2020-10-25 15:10:36 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 9
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/19 is now RUNNING
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/7 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/7 removed: Command exited with code 1
+2020-10-25 15:10:36 INFO  BlockManagerMaster:54 - Removal of executor 7 requested
+2020-10-25 15:10:36 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 7
+2020-10-25 15:10:36 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 7 from BlockManagerMaster.
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/20 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/20 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/20 is now RUNNING
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/8 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/8 removed: Command exited with code 1
+2020-10-25 15:10:36 INFO  BlockManagerMaster:54 - Removal of executor 8 requested
+2020-10-25 15:10:36 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 8
+2020-10-25 15:10:36 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 8 from BlockManagerMaster.
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/21 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/21 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/21 is now RUNNING
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/4 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/4 removed: Command exited with code 1
+2020-10-25 15:10:36 INFO  BlockManagerMaster:54 - Removal of executor 4 requested
+2020-10-25 15:10:36 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 4
+2020-10-25 15:10:36 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 4 from BlockManagerMaster.
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/22 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/22 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/22 is now RUNNING
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/10 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/10 removed: Command exited with code 1
+2020-10-25 15:10:36 INFO  BlockManagerMaster:54 - Removal of executor 10 requested
+2020-10-25 15:10:36 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 10
+2020-10-25 15:10:36 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 10 from BlockManagerMaster.
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/23 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/23 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:36 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.142.0.11:33840) with ID 5
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/11 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/11 removed: Command exited with code 1
+2020-10-25 15:10:36 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 11 from BlockManagerMaster.
+2020-10-25 15:10:36 INFO  BlockManagerMaster:54 - Removal of executor 11 requested
+2020-10-25 15:10:36 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 11
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/24 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:36 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/24 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/23 is now RUNNING
+2020-10-25 15:10:36 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.142.0.11:40587 with 912.3 MB RAM, BlockManagerId(5, 10.142.0.11, 40587, None)
+2020-10-25 15:10:36 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/24 is now RUNNING
+2020-10-25 15:10:36 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.128.0.15:41146) with ID 1
+2020-10-25 15:10:36 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.128.0.15:44115 with 912.3 MB RAM, BlockManagerId(1, 10.128.0.15, 44115, None)
+2020-10-25 15:10:37 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.138.0.4:41022) with ID 6
+2020-10-25 15:10:37 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.138.0.5:37526) with ID 14
+2020-10-25 15:10:37 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.138.0.4:45087 with 912.3 MB RAM, BlockManagerId(6, 10.138.0.4, 45087, None)
+2020-10-25 15:10:37 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.132.0.7:42734) with ID 15
+2020-10-25 15:10:37 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.138.0.5:45231 with 912.3 MB RAM, BlockManagerId(14, 10.138.0.5, 45231, None)
+2020-10-25 15:10:37 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.132.0.6:44310) with ID 2
+2020-10-25 15:10:37 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Registered executor NettyRpcEndpointRef(spark-client://Executor) (10.164.0.2:55210) with ID 13
+2020-10-25 15:10:37 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.132.0.7:33049 with 912.3 MB RAM, BlockManagerId(15, 10.132.0.7, 33049, None)
+2020-10-25 15:10:37 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/16 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:37 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/16 removed: Command exited with code 1
+2020-10-25 15:10:37 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 16 from BlockManagerMaster.
+2020-10-25 15:10:37 INFO  BlockManagerMaster:54 - Removal of executor 16 requested
+2020-10-25 15:10:37 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 16
+2020-10-25 15:10:37 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/25 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:37 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/25 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:37 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/17 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:37 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/17 removed: Command exited with code 1
+2020-10-25 15:10:37 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 17 from BlockManagerMaster.
+2020-10-25 15:10:37 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/26 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:37 INFO  BlockManagerMaster:54 - Removal of executor 17 requested
+2020-10-25 15:10:37 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 17
+2020-10-25 15:10:37 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/26 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:37 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.132.0.6:43333 with 912.3 MB RAM, BlockManagerId(2, 10.132.0.6, 43333, None)
+2020-10-25 15:10:37 INFO  BlockManagerMasterEndpoint:54 - Registering block manager 10.164.0.2:37919 with 912.3 MB RAM, BlockManagerId(13, 10.164.0.2, 37919, None)
+2020-10-25 15:10:37 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/25 is now RUNNING
+2020-10-25 15:10:37 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/26 is now RUNNING
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/19 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/19 removed: Command exited with code 1
+2020-10-25 15:10:38 INFO  BlockManagerMaster:54 - Removal of executor 19 requested
+2020-10-25 15:10:38 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 19
+2020-10-25 15:10:38 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 19 from BlockManagerMaster.
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/27 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/27 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/27 is now RUNNING
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/18 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/18 removed: Command exited with code 1
+2020-10-25 15:10:38 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 18 from BlockManagerMaster.
+2020-10-25 15:10:38 INFO  BlockManagerMaster:54 - Removal of executor 18 requested
+2020-10-25 15:10:38 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 18
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/28 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/28 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/28 is now RUNNING
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/20 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/20 removed: Command exited with code 1
+2020-10-25 15:10:38 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 20 from BlockManagerMaster.
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/29 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:38 INFO  BlockManagerMaster:54 - Removal of executor 20 requested
+2020-10-25 15:10:38 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 20
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/29 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/29 is now RUNNING
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/21 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/21 removed: Command exited with code 1
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/30 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/30 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:38 INFO  BlockManagerMaster:54 - Removal of executor 21 requested
+2020-10-25 15:10:38 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 21 from BlockManagerMaster.
+2020-10-25 15:10:38 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 21
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/30 is now RUNNING
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/22 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/22 removed: Command exited with code 1
+2020-10-25 15:10:38 INFO  BlockManagerMaster:54 - Removal of executor 22 requested
+2020-10-25 15:10:38 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 22
+2020-10-25 15:10:38 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 22 from BlockManagerMaster.
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/31 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/31 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/31 is now RUNNING
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/23 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/23 removed: Command exited with code 1
+2020-10-25 15:10:38 INFO  BlockManagerMaster:54 - Removal of executor 23 requested
+2020-10-25 15:10:38 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 23 from BlockManagerMaster.
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/32 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:38 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 23
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/32 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/32 is now RUNNING
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/24 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/24 removed: Command exited with code 1
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/33 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:38 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 24 from BlockManagerMaster.
+2020-10-25 15:10:38 INFO  BlockManagerMaster:54 - Removal of executor 24 requested
+2020-10-25 15:10:38 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 24
+2020-10-25 15:10:38 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/33 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:38 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/33 is now RUNNING
+2020-10-25 15:10:39 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/25 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:39 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/25 removed: Command exited with code 1
+2020-10-25 15:10:39 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/34 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:39 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 25 from BlockManagerMaster.
+2020-10-25 15:10:39 INFO  BlockManagerMaster:54 - Removal of executor 25 requested
+2020-10-25 15:10:39 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/34 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:39 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 25
+2020-10-25 15:10:39 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/26 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:39 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/26 removed: Command exited with code 1
+2020-10-25 15:10:39 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 26 from BlockManagerMaster.
+2020-10-25 15:10:39 INFO  BlockManagerMaster:54 - Removal of executor 26 requested
+2020-10-25 15:10:39 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 26
+2020-10-25 15:10:39 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/35 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:39 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/35 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:39 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/34 is now RUNNING
+2020-10-25 15:10:39 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/35 is now RUNNING
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/27 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:40 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/27 removed: Command exited with code 1
+2020-10-25 15:10:40 INFO  BlockManagerMaster:54 - Removal of executor 27 requested
+2020-10-25 15:10:40 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 27
+2020-10-25 15:10:40 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 27 from BlockManagerMaster.
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/36 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:40 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/36 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/36 is now RUNNING
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/28 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:40 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/28 removed: Command exited with code 1
+2020-10-25 15:10:40 INFO  BlockManagerMaster:54 - Removal of executor 28 requested
+2020-10-25 15:10:40 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 28
+2020-10-25 15:10:40 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 28 from BlockManagerMaster.
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/37 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:40 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/37 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/37 is now RUNNING
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/29 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:40 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/29 removed: Command exited with code 1
+2020-10-25 15:10:40 INFO  BlockManagerMaster:54 - Removal of executor 29 requested
+2020-10-25 15:10:40 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 29
+2020-10-25 15:10:40 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 29 from BlockManagerMaster.
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/38 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:40 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/38 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/38 is now RUNNING
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/30 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:40 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/30 removed: Command exited with code 1
+2020-10-25 15:10:40 INFO  BlockManagerMaster:54 - Removal of executor 30 requested
+2020-10-25 15:10:40 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 30
+2020-10-25 15:10:40 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 30 from BlockManagerMaster.
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/39 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:40 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/39 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/39 is now RUNNING
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/31 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:40 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/31 removed: Command exited with code 1
+2020-10-25 15:10:40 INFO  BlockManagerMaster:54 - Removal of executor 31 requested
+2020-10-25 15:10:40 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 31
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/40 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:40 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 31 from BlockManagerMaster.
+2020-10-25 15:10:40 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/40 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:40 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/40 is now RUNNING
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/32 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:41 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/32 removed: Command exited with code 1
+2020-10-25 15:10:41 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 32 from BlockManagerMaster.
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/41 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:41 INFO  BlockManagerMaster:54 - Removal of executor 32 requested
+2020-10-25 15:10:41 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 32
+2020-10-25 15:10:41 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/41 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/34 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:41 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/34 removed: Command exited with code 1
+2020-10-25 15:10:41 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 34 from BlockManagerMaster.
+2020-10-25 15:10:41 INFO  BlockManagerMaster:54 - Removal of executor 34 requested
+2020-10-25 15:10:41 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 34
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/42 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:41 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/42 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/41 is now RUNNING
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/33 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:41 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/33 removed: Command exited with code 1
+2020-10-25 15:10:41 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 33 from BlockManagerMaster.
+2020-10-25 15:10:41 INFO  BlockManagerMaster:54 - Removal of executor 33 requested
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/43 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:41 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 33
+2020-10-25 15:10:41 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/43 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/42 is now RUNNING
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/35 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:41 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/35 removed: Command exited with code 1
+2020-10-25 15:10:41 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 35 from BlockManagerMaster.
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/44 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:41 INFO  BlockManagerMaster:54 - Removal of executor 35 requested
+2020-10-25 15:10:41 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 35
+2020-10-25 15:10:41 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/44 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/43 is now RUNNING
+2020-10-25 15:10:41 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/44 is now RUNNING
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/36 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:42 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/36 removed: Command exited with code 1
+2020-10-25 15:10:42 INFO  BlockManagerMaster:54 - Removal of executor 36 requested
+2020-10-25 15:10:42 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 36
+2020-10-25 15:10:42 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 36 from BlockManagerMaster.
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/45 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:42 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/45 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/45 is now RUNNING
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/37 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:42 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/37 removed: Command exited with code 1
+2020-10-25 15:10:42 INFO  BlockManagerMaster:54 - Removal of executor 37 requested
+2020-10-25 15:10:42 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 37
+2020-10-25 15:10:42 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 37 from BlockManagerMaster.
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/46 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:42 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/46 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/46 is now RUNNING
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/42 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:42 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/42 removed: Command exited with code 1
+2020-10-25 15:10:42 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 42 from BlockManagerMaster.
+2020-10-25 15:10:42 INFO  BlockManagerMaster:54 - Removal of executor 42 requested
+2020-10-25 15:10:42 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 42
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/47 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:42 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/47 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/38 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:42 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/38 removed: Command exited with code 1
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/48 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:42 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 38 from BlockManagerMaster.
+2020-10-25 15:10:42 INFO  BlockManagerMaster:54 - Removal of executor 38 requested
+2020-10-25 15:10:42 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/48 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:42 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 38
+2020-10-25 15:10:42 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/48 is now RUNNING
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/47 is now RUNNING
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/39 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:43 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/39 removed: Command exited with code 1
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/49 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:43 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 39 from BlockManagerMaster.
+2020-10-25 15:10:43 INFO  BlockManagerMaster:54 - Removal of executor 39 requested
+2020-10-25 15:10:43 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/49 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:43 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 39
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/49 is now RUNNING
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/44 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:43 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/44 removed: Command exited with code 1
+2020-10-25 15:10:43 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 44 from BlockManagerMaster.
+2020-10-25 15:10:43 INFO  BlockManagerMaster:54 - Removal of executor 44 requested
+2020-10-25 15:10:43 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 44
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/50 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:43 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/50 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/40 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:43 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/40 removed: Command exited with code 1
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/51 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:43 INFO  BlockManagerMaster:54 - Removal of executor 40 requested
+2020-10-25 15:10:43 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 40 from BlockManagerMaster.
+2020-10-25 15:10:43 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/51 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:43 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 40
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/51 is now RUNNING
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/50 is now RUNNING
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/41 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:43 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/41 removed: Command exited with code 1
+2020-10-25 15:10:43 INFO  BlockManagerMaster:54 - Removal of executor 41 requested
+2020-10-25 15:10:43 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 41
+2020-10-25 15:10:43 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 41 from BlockManagerMaster.
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/52 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:43 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/52 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/52 is now RUNNING
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/43 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:43 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/43 removed: Command exited with code 1
+2020-10-25 15:10:43 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 43 from BlockManagerMaster.
+2020-10-25 15:10:43 INFO  BlockManagerMaster:54 - Removal of executor 43 requested
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/53 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:43 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 43
+2020-10-25 15:10:43 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/53 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:43 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/53 is now RUNNING
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/47 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:44 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/47 removed: Command exited with code 1
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/54 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:44 INFO  BlockManagerMaster:54 - Removal of executor 47 requested
+2020-10-25 15:10:44 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 47
+2020-10-25 15:10:44 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 47 from BlockManagerMaster.
+2020-10-25 15:10:44 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/54 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/45 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:44 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/45 removed: Command exited with code 1
+2020-10-25 15:10:44 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 45 from BlockManagerMaster.
+2020-10-25 15:10:44 INFO  BlockManagerMaster:54 - Removal of executor 45 requested
+2020-10-25 15:10:44 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 45
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/55 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:44 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/55 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/55 is now RUNNING
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/54 is now RUNNING
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/46 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:44 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/46 removed: Command exited with code 1
+2020-10-25 15:10:44 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 46 from BlockManagerMaster.
+2020-10-25 15:10:44 INFO  BlockManagerMaster:54 - Removal of executor 46 requested
+2020-10-25 15:10:44 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 46
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/56 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:44 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/56 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/56 is now RUNNING
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/50 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:44 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/50 removed: Command exited with code 1
+2020-10-25 15:10:44 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 50 from BlockManagerMaster.
+2020-10-25 15:10:44 INFO  BlockManagerMaster:54 - Removal of executor 50 requested
+2020-10-25 15:10:44 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 50
+2020-10-25 15:10:44 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/57 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:44 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/57 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/57 is now RUNNING
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/48 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:45 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/48 removed: Command exited with code 1
+2020-10-25 15:10:45 INFO  BlockManagerMaster:54 - Removal of executor 48 requested
+2020-10-25 15:10:45 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 48
+2020-10-25 15:10:45 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 48 from BlockManagerMaster.
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/58 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:45 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/58 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/58 is now RUNNING
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/49 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:45 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/49 removed: Command exited with code 1
+2020-10-25 15:10:45 INFO  BlockManagerMaster:54 - Removal of executor 49 requested
+2020-10-25 15:10:45 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 49
+2020-10-25 15:10:45 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 49 from BlockManagerMaster.
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/59 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:45 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/59 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/59 is now RUNNING
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/51 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:45 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/51 removed: Command exited with code 1
+2020-10-25 15:10:45 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 51 from BlockManagerMaster.
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/60 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:45 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/60 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:45 INFO  BlockManagerMaster:54 - Removal of executor 51 requested
+2020-10-25 15:10:45 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 51
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/60 is now RUNNING
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/52 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:45 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/52 removed: Command exited with code 1
+2020-10-25 15:10:45 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 52 from BlockManagerMaster.
+2020-10-25 15:10:45 INFO  BlockManagerMaster:54 - Removal of executor 52 requested
+2020-10-25 15:10:45 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 52
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/61 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:45 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/61 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:45 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/61 is now RUNNING
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/53 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:46 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/53 removed: Command exited with code 1
+2020-10-25 15:10:46 INFO  BlockManagerMaster:54 - Removal of executor 53 requested
+2020-10-25 15:10:46 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 53 from BlockManagerMaster.
+2020-10-25 15:10:46 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 53
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/62 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:46 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/62 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/62 is now RUNNING
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/54 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:46 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/54 removed: Command exited with code 1
+2020-10-25 15:10:46 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 54 from BlockManagerMaster.
+2020-10-25 15:10:46 INFO  BlockManagerMaster:54 - Removal of executor 54 requested
+2020-10-25 15:10:46 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 54
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/63 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:46 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/63 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/63 is now RUNNING
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/55 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:46 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/55 removed: Command exited with code 1
+2020-10-25 15:10:46 INFO  BlockManagerMaster:54 - Removal of executor 55 requested
+2020-10-25 15:10:46 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 55
+2020-10-25 15:10:46 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 55 from BlockManagerMaster.
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/64 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:46 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/64 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/64 is now RUNNING
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/57 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:46 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/57 removed: Command exited with code 1
+2020-10-25 15:10:46 INFO  BlockManagerMaster:54 - Removal of executor 57 requested
+2020-10-25 15:10:46 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 57
+2020-10-25 15:10:46 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 57 from BlockManagerMaster.
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/65 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:46 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/65 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/56 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:46 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/56 removed: Command exited with code 1
+2020-10-25 15:10:46 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 56 from BlockManagerMaster.
+2020-10-25 15:10:46 INFO  BlockManagerMaster:54 - Removal of executor 56 requested
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/66 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:46 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 56
+2020-10-25 15:10:46 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/66 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:46 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/66 is now RUNNING
+2020-10-25 15:10:47 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/65 is now RUNNING
+2020-10-25 15:10:47 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/58 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:47 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/58 removed: Command exited with code 1
+2020-10-25 15:10:47 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 58 from BlockManagerMaster.
+2020-10-25 15:10:47 INFO  BlockManagerMaster:54 - Removal of executor 58 requested
+2020-10-25 15:10:47 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 58
+2020-10-25 15:10:47 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/67 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:47 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/67 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:47 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/67 is now RUNNING
+2020-10-25 15:10:47 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/59 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:47 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/59 removed: Command exited with code 1
+2020-10-25 15:10:47 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 59 from BlockManagerMaster.
+2020-10-25 15:10:47 INFO  BlockManagerMaster:54 - Removal of executor 59 requested
+2020-10-25 15:10:47 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 59
+2020-10-25 15:10:47 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/68 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:47 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/68 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:47 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/68 is now RUNNING
+2020-10-25 15:10:47 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/60 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:47 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/60 removed: Command exited with code 1
+2020-10-25 15:10:47 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/69 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:47 INFO  BlockManagerMaster:54 - Removal of executor 60 requested
+2020-10-25 15:10:47 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 60
+2020-10-25 15:10:47 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 60 from BlockManagerMaster.
+2020-10-25 15:10:47 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/69 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:47 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/69 is now RUNNING
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/63 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:48 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/63 removed: Command exited with code 1
+2020-10-25 15:10:48 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 63 from BlockManagerMaster.
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/70 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:48 INFO  BlockManagerMaster:54 - Removal of executor 63 requested
+2020-10-25 15:10:48 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 63
+2020-10-25 15:10:48 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/70 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/61 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:48 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/61 removed: Command exited with code 1
+2020-10-25 15:10:48 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 61 from BlockManagerMaster.
+2020-10-25 15:10:48 INFO  BlockManagerMaster:54 - Removal of executor 61 requested
+2020-10-25 15:10:48 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 61
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/71 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:48 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/71 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/71 is now RUNNING
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/70 is now RUNNING
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/65 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:48 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/65 removed: Command exited with code 1
+2020-10-25 15:10:48 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 65 from BlockManagerMaster.
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/72 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:48 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/72 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:48 INFO  BlockManagerMaster:54 - Removal of executor 65 requested
+2020-10-25 15:10:48 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 65
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/62 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:48 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/62 removed: Command exited with code 1
+2020-10-25 15:10:48 INFO  BlockManagerMaster:54 - Removal of executor 62 requested
+2020-10-25 15:10:48 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 62 from BlockManagerMaster.
+2020-10-25 15:10:48 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 62
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/73 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:48 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/73 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/73 is now RUNNING
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/72 is now RUNNING
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/64 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:48 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/64 removed: Command exited with code 1
+2020-10-25 15:10:48 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 64 from BlockManagerMaster.
+2020-10-25 15:10:48 INFO  BlockManagerMaster:54 - Removal of executor 64 requested
+2020-10-25 15:10:48 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 64
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/74 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:48 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/74 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:48 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/74 is now RUNNING
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/66 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:49 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/66 removed: Command exited with code 1
+2020-10-25 15:10:49 INFO  BlockManagerMaster:54 - Removal of executor 66 requested
+2020-10-25 15:10:49 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 66
+2020-10-25 15:10:49 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 66 from BlockManagerMaster.
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/75 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/75 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/75 is now RUNNING
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/67 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:49 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/67 removed: Command exited with code 1
+2020-10-25 15:10:49 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 67 from BlockManagerMaster.
+2020-10-25 15:10:49 INFO  BlockManagerMaster:54 - Removal of executor 67 requested
+2020-10-25 15:10:49 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 67
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/76 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/76 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/76 is now RUNNING
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/68 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:49 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/68 removed: Command exited with code 1
+2020-10-25 15:10:49 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 68 from BlockManagerMaster.
+2020-10-25 15:10:49 INFO  BlockManagerMaster:54 - Removal of executor 68 requested
+2020-10-25 15:10:49 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 68
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/77 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/77 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/77 is now RUNNING
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/70 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:49 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/70 removed: Command exited with code 1
+2020-10-25 15:10:49 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 70 from BlockManagerMaster.
+2020-10-25 15:10:49 INFO  BlockManagerMaster:54 - Removal of executor 70 requested
+2020-10-25 15:10:49 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 70
+2020-10-25 15:10:49 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/78 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:49 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/78 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:50 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/78 is now RUNNING
+2020-10-25 15:10:50 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/69 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:50 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/69 removed: Command exited with code 1
+2020-10-25 15:10:50 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 69 from BlockManagerMaster.
+2020-10-25 15:10:50 INFO  BlockManagerMaster:54 - Removal of executor 69 requested
+2020-10-25 15:10:50 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 69
+2020-10-25 15:10:50 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/79 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:50 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/79 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:50 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/72 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:50 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/72 removed: Command exited with code 1
+2020-10-25 15:10:50 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/80 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:50 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/80 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:50 INFO  BlockManagerMaster:54 - Removal of executor 72 requested
+2020-10-25 15:10:50 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 72 from BlockManagerMaster.
+2020-10-25 15:10:50 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 72
+2020-10-25 15:10:50 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/79 is now RUNNING
+2020-10-25 15:10:50 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/80 is now RUNNING
+2020-10-25 15:10:50 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/71 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:50 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/71 removed: Command exited with code 1
+2020-10-25 15:10:50 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/81 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:50 INFO  BlockManagerMaster:54 - Removal of executor 71 requested
+2020-10-25 15:10:50 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 71
+2020-10-25 15:10:50 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 71 from BlockManagerMaster.
+2020-10-25 15:10:50 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/81 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:50 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/81 is now RUNNING
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/73 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:51 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/73 removed: Command exited with code 1
+2020-10-25 15:10:51 INFO  BlockManagerMaster:54 - Removal of executor 73 requested
+2020-10-25 15:10:51 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 73
+2020-10-25 15:10:51 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 73 from BlockManagerMaster.
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/82 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:51 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/82 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/74 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:51 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/74 removed: Command exited with code 1
+2020-10-25 15:10:51 INFO  BlockManagerMaster:54 - Removal of executor 74 requested
+2020-10-25 15:10:51 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 74
+2020-10-25 15:10:51 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 74 from BlockManagerMaster.
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/83 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:51 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/83 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/83 is now RUNNING
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/82 is now RUNNING
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/75 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:51 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/75 removed: Command exited with code 1
+2020-10-25 15:10:51 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 75 from BlockManagerMaster.
+2020-10-25 15:10:51 INFO  BlockManagerMaster:54 - Removal of executor 75 requested
+2020-10-25 15:10:51 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 75
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/84 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:51 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/84 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/84 is now RUNNING
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/78 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:51 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/78 removed: Command exited with code 1
+2020-10-25 15:10:51 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 78 from BlockManagerMaster.
+2020-10-25 15:10:51 INFO  BlockManagerMaster:54 - Removal of executor 78 requested
+2020-10-25 15:10:51 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 78
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/85 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:51 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/85 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/76 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:51 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/76 removed: Command exited with code 1
+2020-10-25 15:10:51 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 76 from BlockManagerMaster.
+2020-10-25 15:10:51 INFO  BlockManagerMaster:54 - Removal of executor 76 requested
+2020-10-25 15:10:51 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 76
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/86 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:51 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/86 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:51 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/86 is now RUNNING
+2020-10-25 15:10:52 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/77 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:52 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/77 removed: Command exited with code 1
+2020-10-25 15:10:52 INFO  BlockManagerMaster:54 - Removal of executor 77 requested
+2020-10-25 15:10:52 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 77
+2020-10-25 15:10:52 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 77 from BlockManagerMaster.
+2020-10-25 15:10:52 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/87 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:52 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/87 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:52 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/87 is now RUNNING
+2020-10-25 15:10:52 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/85 is now RUNNING
+2020-10-25 15:10:52 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/80 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:52 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/80 removed: Command exited with code 1
+2020-10-25 15:10:52 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 80 from BlockManagerMaster.
+2020-10-25 15:10:52 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/88 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:52 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/88 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:52 INFO  BlockManagerMaster:54 - Removal of executor 80 requested
+2020-10-25 15:10:52 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 80
+2020-10-25 15:10:52 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/88 is now RUNNING
+2020-10-25 15:10:52 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/79 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:52 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/79 removed: Command exited with code 1
+2020-10-25 15:10:52 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 79 from BlockManagerMaster.
+2020-10-25 15:10:52 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/89 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:52 INFO  BlockManagerMaster:54 - Removal of executor 79 requested
+2020-10-25 15:10:52 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 79
+2020-10-25 15:10:52 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/89 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:52 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/89 is now RUNNING
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/81 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:53 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/81 removed: Command exited with code 1
+2020-10-25 15:10:53 INFO  BlockManagerMaster:54 - Removal of executor 81 requested
+2020-10-25 15:10:53 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 81
+2020-10-25 15:10:53 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 81 from BlockManagerMaster.
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/90 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/90 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/90 is now RUNNING
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/83 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:53 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/83 removed: Command exited with code 1
+2020-10-25 15:10:53 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 83 from BlockManagerMaster.
+2020-10-25 15:10:53 INFO  BlockManagerMaster:54 - Removal of executor 83 requested
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/91 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:53 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 83
+2020-10-25 15:10:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/91 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/91 is now RUNNING
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/82 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:53 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/82 removed: Command exited with code 1
+2020-10-25 15:10:53 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 82 from BlockManagerMaster.
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/92 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/92 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:53 INFO  BlockManagerMaster:54 - Removal of executor 82 requested
+2020-10-25 15:10:53 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 82
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/84 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:53 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/84 removed: Command exited with code 1
+2020-10-25 15:10:53 INFO  BlockManagerMaster:54 - Removal of executor 84 requested
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/93 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:53 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 84 from BlockManagerMaster.
+2020-10-25 15:10:53 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 84
+2020-10-25 15:10:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/93 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/93 is now RUNNING
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/92 is now RUNNING
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/85 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:53 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/85 removed: Command exited with code 1
+2020-10-25 15:10:53 INFO  BlockManagerMaster:54 - Removal of executor 85 requested
+2020-10-25 15:10:53 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 85
+2020-10-25 15:10:53 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 85 from BlockManagerMaster.
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/94 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:53 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/94 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:53 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/94 is now RUNNING
+2020-10-25 15:10:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/88 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:54 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/88 removed: Command exited with code 1
+2020-10-25 15:10:54 INFO  BlockManagerMaster:54 - Removal of executor 88 requested
+2020-10-25 15:10:54 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 88
+2020-10-25 15:10:54 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 88 from BlockManagerMaster.
+2020-10-25 15:10:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/95 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:54 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/95 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/86 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:54 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/86 removed: Command exited with code 1
+2020-10-25 15:10:54 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 86 from BlockManagerMaster.
+2020-10-25 15:10:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/96 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:54 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/96 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:54 INFO  BlockManagerMaster:54 - Removal of executor 86 requested
+2020-10-25 15:10:54 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 86
+2020-10-25 15:10:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/96 is now RUNNING
+2020-10-25 15:10:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/87 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:54 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/87 removed: Command exited with code 1
+2020-10-25 15:10:54 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 87 from BlockManagerMaster.
+2020-10-25 15:10:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/97 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:54 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/97 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:54 INFO  BlockManagerMaster:54 - Removal of executor 87 requested
+2020-10-25 15:10:54 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 87
+2020-10-25 15:10:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/95 is now RUNNING
+2020-10-25 15:10:54 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/97 is now RUNNING
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/89 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/89 removed: Command exited with code 1
+2020-10-25 15:10:55 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 89 from BlockManagerMaster.
+2020-10-25 15:10:55 INFO  BlockManagerMaster:54 - Removal of executor 89 requested
+2020-10-25 15:10:55 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 89
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/98 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/98 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/94 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/94 removed: Command exited with code 1
+2020-10-25 15:10:55 INFO  BlockManagerMaster:54 - Removal of executor 94 requested
+2020-10-25 15:10:55 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 94
+2020-10-25 15:10:55 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 94 from BlockManagerMaster.
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/99 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/99 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/98 is now RUNNING
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/91 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/91 removed: Command exited with code 1
+2020-10-25 15:10:55 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 91 from BlockManagerMaster.
+2020-10-25 15:10:55 INFO  BlockManagerMaster:54 - Removal of executor 91 requested
+2020-10-25 15:10:55 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 91
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/100 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/100 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/100 is now RUNNING
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/90 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/90 removed: Command exited with code 1
+2020-10-25 15:10:55 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 90 from BlockManagerMaster.
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/101 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:55 INFO  BlockManagerMaster:54 - Removal of executor 90 requested
+2020-10-25 15:10:55 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 90
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/101 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/99 is now RUNNING
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/101 is now RUNNING
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/93 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/93 removed: Command exited with code 1
+2020-10-25 15:10:55 INFO  BlockManagerMaster:54 - Removal of executor 93 requested
+2020-10-25 15:10:55 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 93
+2020-10-25 15:10:55 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 93 from BlockManagerMaster.
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/102 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/102 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/102 is now RUNNING
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/95 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/95 removed: Command exited with code 1
+2020-10-25 15:10:55 INFO  BlockManagerMaster:54 - Removal of executor 95 requested
+2020-10-25 15:10:55 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 95
+2020-10-25 15:10:55 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 95 from BlockManagerMaster.
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/103 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/103 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/92 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/92 removed: Command exited with code 1
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/104 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:55 INFO  BlockManagerMaster:54 - Removal of executor 92 requested
+2020-10-25 15:10:55 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 92
+2020-10-25 15:10:55 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 92 from BlockManagerMaster.
+2020-10-25 15:10:55 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/104 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:55 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/104 is now RUNNING
+2020-10-25 15:10:56 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/103 is now RUNNING
+2020-10-25 15:10:56 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/96 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:56 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/96 removed: Command exited with code 1
+2020-10-25 15:10:56 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 96 from BlockManagerMaster.
+2020-10-25 15:10:56 INFO  BlockManagerMaster:54 - Removal of executor 96 requested
+2020-10-25 15:10:56 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 96
+2020-10-25 15:10:56 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/105 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:56 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/105 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:56 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/105 is now RUNNING
+2020-10-25 15:10:56 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/97 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:56 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/97 removed: Command exited with code 1
+2020-10-25 15:10:56 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 97 from BlockManagerMaster.
+2020-10-25 15:10:56 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/106 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:56 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/106 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:56 INFO  BlockManagerMaster:54 - Removal of executor 97 requested
+2020-10-25 15:10:56 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 97
+2020-10-25 15:10:56 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/106 is now RUNNING
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/99 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/99 removed: Command exited with code 1
+2020-10-25 15:10:57 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 99 from BlockManagerMaster.
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/107 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:57 INFO  BlockManagerMaster:54 - Removal of executor 99 requested
+2020-10-25 15:10:57 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 99
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/107 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/107 is now RUNNING
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/100 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/100 removed: Command exited with code 1
+2020-10-25 15:10:57 INFO  BlockManagerMaster:54 - Removal of executor 100 requested
+2020-10-25 15:10:57 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 100
+2020-10-25 15:10:57 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 100 from BlockManagerMaster.
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/108 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/108 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/108 is now RUNNING
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/98 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/98 removed: Command exited with code 1
+2020-10-25 15:10:57 INFO  BlockManagerMaster:54 - Removal of executor 98 requested
+2020-10-25 15:10:57 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 98
+2020-10-25 15:10:57 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 98 from BlockManagerMaster.
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/109 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/109 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/109 is now RUNNING
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/103 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/103 removed: Command exited with code 1
+2020-10-25 15:10:57 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 103 from BlockManagerMaster.
+2020-10-25 15:10:57 INFO  BlockManagerMaster:54 - Removal of executor 103 requested
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/110 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:57 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 103
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/110 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/102 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/102 removed: Command exited with code 1
+2020-10-25 15:10:57 INFO  BlockManagerMaster:54 - Removal of executor 102 requested
+2020-10-25 15:10:57 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 102 from BlockManagerMaster.
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/111 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:57 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 102
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/111 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/111 is now RUNNING
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/101 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/101 removed: Command exited with code 1
+2020-10-25 15:10:57 INFO  BlockManagerMaster:54 - Removal of executor 101 requested
+2020-10-25 15:10:57 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 101
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/112 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:10:57 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 101 from BlockManagerMaster.
+2020-10-25 15:10:57 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/112 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/110 is now RUNNING
+2020-10-25 15:10:57 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/112 is now RUNNING
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/104 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:58 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/104 removed: Command exited with code 1
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/113 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:10:58 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/113 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:58 INFO  BlockManagerMaster:54 - Removal of executor 104 requested
+2020-10-25 15:10:58 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 104
+2020-10-25 15:10:58 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 104 from BlockManagerMaster.
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/113 is now RUNNING
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/105 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:58 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/105 removed: Command exited with code 1
+2020-10-25 15:10:58 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 105 from BlockManagerMaster.
+2020-10-25 15:10:58 INFO  BlockManagerMaster:54 - Removal of executor 105 requested
+2020-10-25 15:10:58 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 105
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/114 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:10:58 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/114 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/114 is now RUNNING
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/106 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:58 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/106 removed: Command exited with code 1
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/115 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:10:58 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 106 from BlockManagerMaster.
+2020-10-25 15:10:58 INFO  BlockManagerMaster:54 - Removal of executor 106 requested
+2020-10-25 15:10:58 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 106
+2020-10-25 15:10:58 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/115 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/115 is now RUNNING
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/107 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:58 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/107 removed: Command exited with code 1
+2020-10-25 15:10:58 INFO  BlockManagerMaster:54 - Removal of executor 107 requested
+2020-10-25 15:10:58 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 107
+2020-10-25 15:10:58 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 107 from BlockManagerMaster.
+2020-10-25 15:10:58 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/116 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:10:58 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/116 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/116 is now RUNNING
+2020-10-25 15:10:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/110 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:59 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/110 removed: Command exited with code 1
+2020-10-25 15:10:59 INFO  BlockManagerMaster:54 - Removal of executor 110 requested
+2020-10-25 15:10:59 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 110 from BlockManagerMaster.
+2020-10-25 15:10:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/117 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:10:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/117 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:59 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 110
+2020-10-25 15:10:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/117 is now RUNNING
+2020-10-25 15:10:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/108 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:59 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/108 removed: Command exited with code 1
+2020-10-25 15:10:59 INFO  BlockManagerMaster:54 - Removal of executor 108 requested
+2020-10-25 15:10:59 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 108 from BlockManagerMaster.
+2020-10-25 15:10:59 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 108
+2020-10-25 15:10:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/118 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:10:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/118 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/118 is now RUNNING
+2020-10-25 15:10:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/111 is now EXITED (Command exited with code 1)
+2020-10-25 15:10:59 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/111 removed: Command exited with code 1
+2020-10-25 15:10:59 INFO  BlockManagerMaster:54 - Removal of executor 111 requested
+2020-10-25 15:10:59 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 111
+2020-10-25 15:10:59 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 111 from BlockManagerMaster.
+2020-10-25 15:10:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/119 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:10:59 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/119 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:10:59 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/119 is now RUNNING
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/109 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:00 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/109 removed: Command exited with code 1
+2020-10-25 15:11:00 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 109 from BlockManagerMaster.
+2020-10-25 15:11:00 INFO  BlockManagerMaster:54 - Removal of executor 109 requested
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/120 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:11:00 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 109
+2020-10-25 15:11:00 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/120 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/120 is now RUNNING
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/112 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:00 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/112 removed: Command exited with code 1
+2020-10-25 15:11:00 INFO  BlockManagerMaster:54 - Removal of executor 112 requested
+2020-10-25 15:11:00 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 112
+2020-10-25 15:11:00 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 112 from BlockManagerMaster.
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/121 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:11:00 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/121 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/121 is now RUNNING
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/116 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:00 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/116 removed: Command exited with code 1
+2020-10-25 15:11:00 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 116 from BlockManagerMaster.
+2020-10-25 15:11:00 INFO  BlockManagerMaster:54 - Removal of executor 116 requested
+2020-10-25 15:11:00 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 116
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/122 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:11:00 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/122 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/114 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:00 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/114 removed: Command exited with code 1
+2020-10-25 15:11:00 INFO  BlockManagerMaster:54 - Removal of executor 114 requested
+2020-10-25 15:11:00 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 114
+2020-10-25 15:11:00 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 114 from BlockManagerMaster.
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/123 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:11:00 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/123 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/123 is now RUNNING
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/113 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:00 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/113 removed: Command exited with code 1
+2020-10-25 15:11:00 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 113 from BlockManagerMaster.
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/124 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:11:00 INFO  BlockManagerMaster:54 - Removal of executor 113 requested
+2020-10-25 15:11:00 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 113
+2020-10-25 15:11:00 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/124 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/124 is now RUNNING
+2020-10-25 15:11:00 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/122 is now RUNNING
+2020-10-25 15:11:01 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/115 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:01 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/115 removed: Command exited with code 1
+2020-10-25 15:11:01 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 115 from BlockManagerMaster.
+2020-10-25 15:11:01 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/125 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:11:01 INFO  BlockManagerMaster:54 - Removal of executor 115 requested
+2020-10-25 15:11:01 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 115
+2020-10-25 15:11:01 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/125 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:01 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/125 is now RUNNING
+2020-10-25 15:11:01 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/117 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:01 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/117 removed: Command exited with code 1
+2020-10-25 15:11:01 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 117 from BlockManagerMaster.
+2020-10-25 15:11:01 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/126 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:11:01 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/126 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:01 INFO  BlockManagerMaster:54 - Removal of executor 117 requested
+2020-10-25 15:11:01 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 117
+2020-10-25 15:11:01 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/126 is now RUNNING
+2020-10-25 15:11:01 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/118 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:01 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/118 removed: Command exited with code 1
+2020-10-25 15:11:01 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 118 from BlockManagerMaster.
+2020-10-25 15:11:01 INFO  BlockManagerMaster:54 - Removal of executor 118 requested
+2020-10-25 15:11:01 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/127 on worker-20201025150948-10.142.0.5-33001 (10.142.0.5:33001) with 2 core(s)
+2020-10-25 15:11:01 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 118
+2020-10-25 15:11:01 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/127 on hostPort 10.142.0.5:33001 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:01 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/127 is now RUNNING
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/119 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:02 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/119 removed: Command exited with code 1
+2020-10-25 15:11:02 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 119 from BlockManagerMaster.
+2020-10-25 15:11:02 INFO  BlockManagerMaster:54 - Removal of executor 119 requested
+2020-10-25 15:11:02 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 119
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/128 on worker-20201025150929-10.150.0.5-33299 (10.150.0.5:33299) with 2 core(s)
+2020-10-25 15:11:02 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/128 on hostPort 10.150.0.5:33299 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/128 is now RUNNING
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/120 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:02 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/120 removed: Command exited with code 1
+2020-10-25 15:11:02 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 120 from BlockManagerMaster.
+2020-10-25 15:11:02 INFO  BlockManagerMaster:54 - Removal of executor 120 requested
+2020-10-25 15:11:02 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 120
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/129 on worker-20201025151021-10.128.0.38-42297 (10.128.0.38:42297) with 2 core(s)
+2020-10-25 15:11:02 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/129 on hostPort 10.128.0.38:42297 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/129 is now RUNNING
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/121 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:02 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/121 removed: Command exited with code 1
+2020-10-25 15:11:02 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 121 from BlockManagerMaster.
+2020-10-25 15:11:02 INFO  BlockManagerMaster:54 - Removal of executor 121 requested
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/130 on worker-20201025151016-10.132.0.3-46811 (10.132.0.3:46811) with 2 core(s)
+2020-10-25 15:11:02 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 121
+2020-10-25 15:11:02 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/130 on hostPort 10.132.0.3:46811 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/130 is now RUNNING
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/122 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:02 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/122 removed: Command exited with code 1
+2020-10-25 15:11:02 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 122 from BlockManagerMaster.
+2020-10-25 15:11:02 INFO  BlockManagerMaster:54 - Removal of executor 122 requested
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/131 on worker-20201025151029-10.140.0.3-45477 (10.140.0.3:45477) with 2 core(s)
+2020-10-25 15:11:02 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 122
+2020-10-25 15:11:02 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/131 on hostPort 10.140.0.3:45477 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/131 is now RUNNING
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/123 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:02 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/123 removed: Command exited with code 1
+2020-10-25 15:11:02 INFO  BlockManagerMaster:54 - Removal of executor 123 requested
+2020-10-25 15:11:02 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 123 from BlockManagerMaster.
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/132 on worker-20201025150956-10.150.0.13-40933 (10.150.0.13:40933) with 2 core(s)
+2020-10-25 15:11:02 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 123
+2020-10-25 15:11:02 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/132 on hostPort 10.150.0.13:40933 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:02 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/132 is now RUNNING
+2020-10-25 15:11:03 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/124 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:03 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/124 removed: Command exited with code 1
+2020-10-25 15:11:03 INFO  BlockManagerMaster:54 - Removal of executor 124 requested
+2020-10-25 15:11:03 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/133 on worker-20201025151013-10.132.0.2-37511 (10.132.0.2:37511) with 2 core(s)
+2020-10-25 15:11:03 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 124 from BlockManagerMaster.
+2020-10-25 15:11:03 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 124
+2020-10-25 15:11:03 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/133 on hostPort 10.132.0.2:37511 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:03 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/126 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:03 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/126 removed: Command exited with code 1
+2020-10-25 15:11:03 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/134 on worker-20201025151026-10.140.0.2-42445 (10.140.0.2:42445) with 2 core(s)
+2020-10-25 15:11:03 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 126 from BlockManagerMaster.
+2020-10-25 15:11:03 INFO  BlockManagerMaster:54 - Removal of executor 126 requested
+2020-10-25 15:11:03 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/134 on hostPort 10.140.0.2:42445 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:03 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 126
+2020-10-25 15:11:03 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/125 is now EXITED (Command exited with code 1)
+2020-10-25 15:11:03 INFO  StandaloneSchedulerBackend:54 - Executor app-20201025151033-0000/125 removed: Command exited with code 1
+2020-10-25 15:11:03 INFO  BlockManagerMasterEndpoint:54 - Trying to remove executor 125 from BlockManagerMaster.
+2020-10-25 15:11:03 INFO  BlockManagerMaster:54 - Removal of executor 125 requested
+2020-10-25 15:11:03 INFO  CoarseGrainedSchedulerBackend$DriverEndpoint:54 - Asked to remove non-existent executor 125
+2020-10-25 15:11:03 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor added: app-20201025151033-0000/135 on worker-20201025151018-10.128.0.39-42349 (10.128.0.39:42349) with 2 core(s)
+2020-10-25 15:11:03 INFO  StandaloneSchedulerBackend:54 - Granted executor ID app-20201025151033-0000/135 on hostPort 10.128.0.39:42349 with 2 core(s), 2.0 GB RAM
+2020-10-25 15:11:03 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/133 is now RUNNING
+2020-10-25 15:11:03 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/135 is now RUNNING
+2020-10-25 15:11:03 INFO  StandaloneAppClient$ClientEndpoint:54 - Executor updated: app-20201025151033-0000/134 is now RUNNING
+2020-10-25 15:11:03 INFO  StandaloneSchedulerBackend:54 - SchedulerBackend is ready for scheduling beginning after waiting maxRegisteredResourcesWaitingTime: 30000(ms)
+2020-10-25 15:11:03 INFO  Engine$:121 - Auto detect executor number and executor cores number
+2020-10-25 15:11:03 INFO  Engine$:123 - Executor number is 16 and executor cores number is 2
+2020-10-25 15:11:05 INFO  ThreadPool$:95 - Set mkl threads to 1 on thread 18
+2020-10-25 15:11:05 INFO  Engine$:446 - Find existing spark context. Checking the spark conf...
+cls.getname: com.intel.analytics.bigdl.python.api.Sample
+BigDLBasePickler registering: bigdl.util.common  Sample
+cls.getname: com.intel.analytics.bigdl.python.api.EvaluatedResult
+BigDLBasePickler registering: bigdl.util.common  EvaluatedResult
+cls.getname: com.intel.analytics.bigdl.python.api.JTensor
+BigDLBasePickler registering: bigdl.util.common  JTensor
+cls.getname: com.intel.analytics.bigdl.python.api.JActivity
+BigDLBasePickler registering: bigdl.util.common  JActivity
+0.01
+('Extracting', '/tmp/mnist/train-images-idx3-ubyte.gz')
+('Extracting', '/tmp/mnist/train-labels-idx1-ubyte.gz')
+('Extracting', '/tmp/mnist/t10k-images-idx3-ubyte.gz')
+('Extracting', '/tmp/mnist/t10k-labels-idx1-ubyte.gz')
+creating: createSequential
+creating: createReshape
+creating: createSpatialConvolution
+creating: createTanh
+creating: createSpatialMaxPooling
+creating: createSpatialConvolution
+creating: createTanh
+creating: createSpatialMaxPooling
+creating: createReshape
+creating: createLinear
+creating: createTanh
+creating: createLinear
+creating: createLogSoftMax
+creating: createClassNLLCriterion
+creating: createDefault
+creating: createSGD
+creating: createMaxEpoch
+creating: createDistriOptimizer
+disableCheckSingleton is deprecated. Please use bigdl.check.singleton instead
+creating: createEveryEpoch
+creating: createTop1Accuracy
+creating: createEveryEpoch
+2020-10-25 15:11:06 INFO  DistriOptimizer$:808 - caching training rdd ...
+2020-10-25 15:11:25 INFO  DistriOptimizer$:648 - Cache thread models...
+2020-10-25 15:11:28 INFO  DistriOptimizer$:650 - Cache thread models... done
+2020-10-25 15:11:28 INFO  DistriOptimizer$:160 - Count dataset
+2020-10-25 15:11:29 INFO  DistriOptimizer$:164 - Count dataset complete. Time elapsed: 0.86787411s
+2020-10-25 15:11:29 INFO  DistriOptimizer$:172 - config  {
+	computeThresholdbatchSize: 100
+	maxDropPercentage: 0.0
+	warmupIterationNum: 200
+	isLayerwiseScaled: false
+	dropPercentage: 0.0
+ }
+2020-10-25 15:11:29 INFO  DistriOptimizer$:176 - Shuffle data
+2020-10-25 15:11:30 INFO  DistriOptimizer$:179 - Shuffle data complete. Takes 0.137193434s
+2020-10-25 15:11:37 INFO  DistriOptimizer$:426 - [Epoch 1 1024/60000][Iteration 1][Wall Clock 7.038957561s] Trained 1024 records in 7.038957561 seconds. Throughput is 145.47609 records/second. Loss is 2.3433683. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.01. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:11:42 INFO  DistriOptimizer$:426 - [Epoch 1 2048/60000][Iteration 2][Wall Clock 12.616866519s] Trained 1024 records in 5.577908958 seconds. Throughput is 183.58134 records/second. Loss is 2.3386552. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009998000399920017. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:11:48 INFO  DistriOptimizer$:426 - [Epoch 1 3072/60000][Iteration 3][Wall Clock 18.163110682s] Trained 1024 records in 5.546244163 seconds. Throughput is 184.62946 records/second. Loss is 2.3419828. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009996001599360257. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:11:53 INFO  DistriOptimizer$:426 - [Epoch 1 4096/60000][Iteration 4][Wall Clock 23.71381007s] Trained 1024 records in 5.550699388 seconds. Throughput is 184.48126 records/second. Loss is 2.3247418. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009994003597841297. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:11:59 INFO  DistriOptimizer$:426 - [Epoch 1 5120/60000][Iteration 5][Wall Clock 29.252927367s] Trained 1024 records in 5.539117297 seconds. Throughput is 184.867 records/second. Loss is 2.3270442. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009992006394884094. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:04 INFO  DistriOptimizer$:426 - [Epoch 1 6144/60000][Iteration 6][Wall Clock 34.785242457s] Trained 1024 records in 5.53231509 seconds. Throughput is 185.0943 records/second. Loss is 2.3201282. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009990009990009992. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:10 INFO  DistriOptimizer$:426 - [Epoch 1 7168/60000][Iteration 7][Wall Clock 40.331059372s] Trained 1024 records in 5.545816915 seconds. Throughput is 184.64368 records/second. Loss is 2.324879. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.00998801438274071. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:15 INFO  DistriOptimizer$:426 - [Epoch 1 8192/60000][Iteration 8][Wall Clock 45.837030675s] Trained 1024 records in 5.505971303 seconds. Throughput is 185.9799 records/second. Loss is 2.3223479. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009986019572598362. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:21 INFO  DistriOptimizer$:426 - [Epoch 1 9216/60000][Iteration 9][Wall Clock 51.284268264s] Trained 1024 records in 5.447237589 seconds. Throughput is 187.9852 records/second. Loss is 2.320933. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009984025559105431. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:26 INFO  DistriOptimizer$:426 - [Epoch 1 10240/60000][Iteration 10][Wall Clock 56.749782413s] Trained 1024 records in 5.465514149 seconds. Throughput is 187.35657 records/second. Loss is 2.316204. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009982032341784788. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:32 INFO  DistriOptimizer$:426 - [Epoch 1 11264/60000][Iteration 11][Wall Clock 62.19136689s] Trained 1024 records in 5.441584477 seconds. Throughput is 188.18048 records/second. Loss is 2.3101127. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.00998003992015968. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:37 INFO  DistriOptimizer$:426 - [Epoch 1 12288/60000][Iteration 12][Wall Clock 67.668504782s] Trained 1024 records in 5.477137892 seconds. Throughput is 186.95895 records/second. Loss is 2.3098252. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009978048293753742. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:43 INFO  DistriOptimizer$:426 - [Epoch 1 13312/60000][Iteration 13][Wall Clock 73.128350646s] Trained 1024 records in 5.459845864 seconds. Throughput is 187.55107 records/second. Loss is 2.31217. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009976057462090982. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:48 INFO  DistriOptimizer$:426 - [Epoch 1 14336/60000][Iteration 14][Wall Clock 78.581457193s] Trained 1024 records in 5.453106547 seconds. Throughput is 187.78288 records/second. Loss is 2.3029456. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009974067424695792. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:54 INFO  DistriOptimizer$:426 - [Epoch 1 15360/60000][Iteration 15][Wall Clock 84.01181602s] Trained 1024 records in 5.430358827 seconds. Throughput is 188.56949 records/second. Loss is 2.3041637. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009972078181092942. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:12:59 INFO  DistriOptimizer$:426 - [Epoch 1 16384/60000][Iteration 16][Wall Clock 89.489870826s] Trained 1024 records in 5.478054806 seconds. Throughput is 186.92766 records/second. Loss is 2.2982833. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009970089730807579. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:13:05 INFO  DistriOptimizer$:426 - [Epoch 1 17408/60000][Iteration 17][Wall Clock 95.010626882s] Trained 1024 records in 5.520756056 seconds. Throughput is 185.48184 records/second. Loss is 2.2974534. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.00996810207336523. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:13:10 INFO  DistriOptimizer$:426 - [Epoch 1 18432/60000][Iteration 18][Wall Clock 100.513160313s] Trained 1024 records in 5.502533431 seconds. Throughput is 186.0961 records/second. Loss is 2.3001034. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009966115208291807. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:13:16 INFO  DistriOptimizer$:426 - [Epoch 1 19456/60000][Iteration 19][Wall Clock 106.020146728s] Trained 1024 records in 5.506986415 seconds. Throughput is 185.94562 records/second. Loss is 2.2931316. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.00996412913511359. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:13:21 INFO  DistriOptimizer$:426 - [Epoch 1 20480/60000][Iteration 20][Wall Clock 111.590766691s] Trained 1024 records in 5.570619963 seconds. Throughput is 183.82155 records/second. Loss is 2.2972898. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009962143853357242. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:13:27 INFO  DistriOptimizer$:426 - [Epoch 1 21504/60000][Iteration 21][Wall Clock 117.109524734s] Trained 1024 records in 5.518758043 seconds. Throughput is 185.549 records/second. Loss is 2.2899325. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.0099601593625498. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:13:32 INFO  DistriOptimizer$:426 - [Epoch 1 22528/60000][Iteration 22][Wall Clock 122.626097292s] Trained 1024 records in 5.516572558 seconds. Throughput is 185.6225 records/second. Loss is 2.28816. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009958175662218682. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:13:38 INFO  DistriOptimizer$:426 - [Epoch 1 23552/60000][Iteration 23][Wall Clock 128.124624008s] Trained 1024 records in 5.498526716 seconds. Throughput is 186.2317 records/second. Loss is 2.2876952. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009956192751891677. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:13:43 INFO  DistriOptimizer$:426 - [Epoch 1 24576/60000][Iteration 24][Wall Clock 133.623866319s] Trained 1024 records in 5.499242311 seconds. Throughput is 186.20747 records/second. Loss is 2.284463. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009954210631096954. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:13:49 INFO  DistriOptimizer$:426 - [Epoch 1 25600/60000][Iteration 25][Wall Clock 139.12143612s] Trained 1024 records in 5.497569801 seconds. Throughput is 186.26411 records/second. Loss is 2.2861578. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009952229299363059. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:13:54 INFO  DistriOptimizer$:426 - [Epoch 1 26624/60000][Iteration 26][Wall Clock 144.641929513s] Trained 1024 records in 5.520493393 seconds. Throughput is 185.49066 records/second. Loss is 2.282797. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009950248756218907. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:00 INFO  DistriOptimizer$:426 - [Epoch 1 27648/60000][Iteration 27][Wall Clock 150.128246411s] Trained 1024 records in 5.486316898 seconds. Throughput is 186.64616 records/second. Loss is 2.2805803. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.00994826900119379. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:05 INFO  DistriOptimizer$:426 - [Epoch 1 28672/60000][Iteration 28][Wall Clock 155.604114075s] Trained 1024 records in 5.475867664 seconds. Throughput is 187.00232 records/second. Loss is 2.2763574. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009946290033817386. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:11 INFO  DistriOptimizer$:426 - [Epoch 1 29696/60000][Iteration 29][Wall Clock 161.066891466s] Trained 1024 records in 5.462777391 seconds. Throughput is 187.45042 records/second. Loss is 2.2749298. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.00994431185361973. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:16 INFO  DistriOptimizer$:426 - [Epoch 1 30720/60000][Iteration 30][Wall Clock 166.574861398s] Trained 1024 records in 5.507969932 seconds. Throughput is 185.91241 records/second. Loss is 2.2729888. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.00994233446013124. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:22 INFO  DistriOptimizer$:426 - [Epoch 1 31744/60000][Iteration 31][Wall Clock 172.035377402s] Trained 1024 records in 5.460516004 seconds. Throughput is 187.52806 records/second. Loss is 2.2743626. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009940357852882704. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:27 INFO  DistriOptimizer$:426 - [Epoch 1 32768/60000][Iteration 32][Wall Clock 177.48313154s] Trained 1024 records in 5.447754138 seconds. Throughput is 187.96738 records/second. Loss is 2.259991. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009938382031405287. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:33 INFO  DistriOptimizer$:426 - [Epoch 1 33792/60000][Iteration 33][Wall Clock 182.949592682s] Trained 1024 records in 5.466461142 seconds. Throughput is 187.32411 records/second. Loss is 2.2683196. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009936406995230525. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:38 INFO  DistriOptimizer$:426 - [Epoch 1 34816/60000][Iteration 34][Wall Clock 188.412517912s] Trained 1024 records in 5.46292523 seconds. Throughput is 187.44536 records/second. Loss is 2.2546048. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009934432743890324. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:44 INFO  DistriOptimizer$:426 - [Epoch 1 35840/60000][Iteration 35][Wall Clock 193.880462123s] Trained 1024 records in 5.467944211 seconds. Throughput is 187.27332 records/second. Loss is 2.2656398. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009932459276916966. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:49 INFO  DistriOptimizer$:426 - [Epoch 1 36864/60000][Iteration 36][Wall Clock 199.34219205s] Trained 1024 records in 5.461729927 seconds. Throughput is 187.48639 records/second. Loss is 2.2564926. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.0099304865938431. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:14:55 INFO  DistriOptimizer$:426 - [Epoch 1 37888/60000][Iteration 37][Wall Clock 204.863534215s] Trained 1024 records in 5.521342165 seconds. Throughput is 185.46214 records/second. Loss is 2.2558887. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009928514694201746. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:15:00 INFO  DistriOptimizer$:426 - [Epoch 1 38912/60000][Iteration 38][Wall Clock 210.313111257s] Trained 1024 records in 5.449577042 seconds. Throughput is 187.9045 records/second. Loss is 2.2531528. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009926543577526304. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:15:05 INFO  DistriOptimizer$:426 - [Epoch 1 39936/60000][Iteration 39][Wall Clock 215.771770295s] Trained 1024 records in 5.458659038 seconds. Throughput is 187.59186 records/second. Loss is 2.2533262. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009924573243350535. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:15:11 INFO  DistriOptimizer$:426 - [Epoch 1 40960/60000][Iteration 40][Wall Clock 221.279977288s] Trained 1024 records in 5.508206993 seconds. Throughput is 185.90442 records/second. Loss is 2.2501342. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009922603691208573. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:15:16 INFO  DistriOptimizer$:426 - [Epoch 1 41984/60000][Iteration 41][Wall Clock 226.733168251s] Trained 1024 records in 5.453190963 seconds. Throughput is 187.77997 records/second. Loss is 2.2487557. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.00992063492063492. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:15:22 INFO  DistriOptimizer$:426 - [Epoch 1 43008/60000][Iteration 42][Wall Clock 232.195686436s] Trained 1024 records in 5.462518185 seconds. Throughput is 187.45934 records/second. Loss is 2.2431312. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009918666931164452. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:15:27 INFO  DistriOptimizer$:426 - [Epoch 1 44032/60000][Iteration 43][Wall Clock 237.690897396s] Trained 1024 records in 5.49521096 seconds. Throughput is 186.34407 records/second. Loss is 2.2412424. Sequentialab0bbdd6's hyper parameters: Current learning rate is 0.009916699722332408. Current dampening is 1.7976931348623157E308.  
+2020-10-25 15:15:32 ERROR StandaloneSchedulerBackend:70 - Application has been killed. Reason: Master removed our application: KILLED
+2020-10-25 15:15:32 ERROR DistriOptimizer$:924 - Error: org.apache.spark.SparkException: Job aborted due to stage failure: Master removed our application: KILLED
+	at org.apache.spark.scheduler.DAGScheduler.org$apache$spark$scheduler$DAGScheduler$$failJobAndIndependentStages(DAGScheduler.scala:1602)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1590)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$abortStage$1.apply(DAGScheduler.scala:1589)
+	at scala.collection.mutable.ResizableArray$class.foreach(ResizableArray.scala:59)
+	at scala.collection.mutable.ArrayBuffer.foreach(ArrayBuffer.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.abortStage(DAGScheduler.scala:1589)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:831)
+	at org.apache.spark.scheduler.DAGScheduler$$anonfun$handleTaskSetFailed$1.apply(DAGScheduler.scala:831)
+	at scala.Option.foreach(Option.scala:257)
+	at org.apache.spark.scheduler.DAGScheduler.handleTaskSetFailed(DAGScheduler.scala:831)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.doOnReceive(DAGScheduler.scala:1823)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1772)
+	at org.apache.spark.scheduler.DAGSchedulerEventProcessLoop.onReceive(DAGScheduler.scala:1761)
+	at org.apache.spark.util.EventLoop$$anon$1.run(EventLoop.scala:48)
+	at org.apache.spark.scheduler.DAGScheduler.runJob(DAGScheduler.scala:642)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2034)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2055)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2074)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2099)
+	at org.apache.spark.rdd.RDD.count(RDD.scala:1162)
+	at com.intel.analytics.bigdl.optim.DistriOptimizer$.optimize(DistriOptimizer.scala:409)
+	at com.intel.analytics.bigdl.optim.DistriOptimizer.optimize(DistriOptimizer.scala:898)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-10-25 15:15:32 INFO  DistriOptimizer$:938 - Retrying 1 times
+Traceback (most recent call last):
+  File "/home/am72ghiassi/bd/codes/lenet5.py", line 74, in <module>
+    trained_model = optimizer.optimize()
+  File "/home/am72ghiassi/bd/spark/lib/bigdl-0.11.0-python-api.zip/bigdl/optim/optimizer.py", line 790, in optimize
+  File "/home/am72ghiassi/bd/spark/lib/bigdl-0.11.0-python-api.zip/bigdl/util/common.py", line 645, in callJavaFunc
+  File "/home/am72ghiassi/bd/spark/python/lib/py4j-0.10.7-src.zip/py4j/java_gateway.py", line 1257, in __call__
+  File "/home/am72ghiassi/bd/spark/python/lib/py4j-0.10.7-src.zip/py4j/protocol.py", line 328, in get_return_value
+py4j.protocol.Py4JJavaError: An error occurred while calling o109.optimize.
+: java.lang.IllegalStateException: SparkContext has been shutdown
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2026)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2055)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2074)
+	at org.apache.spark.SparkContext.runJob(SparkContext.scala:2099)
+	at org.apache.spark.rdd.RDD.count(RDD.scala:1162)
+	at com.intel.analytics.bigdl.optim.AbstractOptimizer.clearState(AbstractOptimizer.scala:243)
+	at com.intel.analytics.bigdl.optim.DistriOptimizer.clearState(DistriOptimizer.scala:741)
+	at com.intel.analytics.bigdl.optim.DistriOptimizer.optimize(DistriOptimizer.scala:942)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
+	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
+	at py4j.Gateway.invoke(Gateway.java:282)
+	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
+	at py4j.commands.CallCommand.execute(CallCommand.java:79)
+	at py4j.GatewayConnection.run(GatewayConnection.java:238)
+	at java.lang.Thread.run(Thread.java:748)
+
+2020-10-25 15:15:32 ERROR Utils:91 - Uncaught exception in thread stop-spark-context
+org.apache.spark.SparkException: Exception thrown in awaitResult: 
+	at org.apache.spark.util.ThreadUtils$.awaitResult(ThreadUtils.scala:205)
+	at org.apache.spark.rpc.RpcTimeout.awaitResult(RpcTimeout.scala:75)
+	at org.apache.spark.deploy.client.StandaloneAppClient.stop(StandaloneAppClient.scala:283)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.org$apache$spark$scheduler$cluster$StandaloneSchedulerBackend$$stop(StandaloneSchedulerBackend.scala:226)
+	at org.apache.spark.scheduler.cluster.StandaloneSchedulerBackend.stop(StandaloneSchedulerBackend.scala:124)
+	at org.apache.spark.scheduler.TaskSchedulerImpl.stop(TaskSchedulerImpl.scala:508)
+	at org.apache.spark.scheduler.DAGScheduler.stop(DAGScheduler.scala:1755)
+	at org.apache.spark.SparkContext$$anonfun$stop$8.apply$mcV$sp(SparkContext.scala:1931)
+	at org.apache.spark.util.Utils$.tryLogNonFatalError(Utils.scala:1360)
+	at org.apache.spark.SparkContext.stop(SparkContext.scala:1930)
+	at org.apache.spark.SparkContext$$anon$3.run(SparkContext.scala:1876)
+Caused by: org.apache.spark.SparkException: Could not find AppClient.
+	at org.apache.spark.rpc.netty.Dispatcher.postMessage(Dispatcher.scala:160)
+	at org.apache.spark.rpc.netty.Dispatcher.postLocalMessage(Dispatcher.scala:135)
+	at org.apache.spark.rpc.netty.NettyRpcEnv.ask(NettyRpcEnv.scala:229)
+	at org.apache.spark.rpc.netty.NettyRpcEndpointRef.ask(NettyRpcEnv.scala:523)
+	at org.apache.spark.rpc.RpcEndpointRef.ask(RpcEndpointRef.scala:63)
+	... 9 more
+2020-10-25 15:15:32 ERROR ShutdownHookManager:91 - Exception while deleting Spark temp dir: null
+java.lang.NullPointerException
+	at java.io.File.<init>(File.java:279)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(ShutdownHookManager.scala:65)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1$$anonfun$apply$mcV$sp$3.apply(ShutdownHookManager.scala:62)
+	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:186)
+	at org.apache.spark.util.ShutdownHookManager$$anonfun$1.apply$mcV$sp(ShutdownHookManager.scala:62)
+	at org.apache.spark.util.SparkShutdownHook.run(ShutdownHookManager.scala:216)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1$$anonfun$apply$mcV$sp$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.Utils$.logUncaughtExceptions(Utils.scala:1991)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply$mcV$sp(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anonfun$runAll$1.apply(ShutdownHookManager.scala:188)
+	at scala.util.Try$.apply(Try.scala:192)
+	at org.apache.spark.util.SparkShutdownHookManager.runAll(ShutdownHookManager.scala:188)
+	at org.apache.spark.util.SparkShutdownHookManager$$anon$2.run(ShutdownHookManager.scala:178)
+	at org.apache.hadoop.util.ShutdownHookManager$1.run(ShutdownHookManager.java:54)

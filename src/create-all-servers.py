@@ -46,7 +46,7 @@ def start_slave():
 
     while True:
         try:
-            slave = SlaveNode(f"slave-{cloud_info.ssh_user}-{index}", cloud_info, master_node=SlaveMaster(master_ip), location_string=region)
+            slave = SlaveNode(f"slave-{cloud_info.ssh_user.replace('_', '')}-{index}", cloud_info, master_node=SlaveMaster(master_ip), location_string=region)
             break
         except SSHNodeError as e:
             print(e)
@@ -62,6 +62,7 @@ def start_master():
         file.write('external-IP,internal-IP,name,cloud_index\n')
         file.write(f'{master.pubip},{master.privip},{master.name},{cloud_info_list.index(master.cloud_info)}\n')
 
+    exit(1)
     with io.open('connections/slaves.csv', mode='w', encoding='utf-8') as file:
         file.write('external-IP,internal-IP,name,cloud_index\n')
 
@@ -69,7 +70,6 @@ def start_master():
     for cloud_index, cloud_info in enumerate(cloud_info_list):
         i = 0
         while cloud_info.cpus_left >= 4:
-            cloud_info.cpus_left -= 4
             if added % 8 == 0:
                 input("Please press enter to continue...")
             try:
