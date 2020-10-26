@@ -16,6 +16,7 @@ from libcloud.compute.types import Provider
 from paramiko import SSHClient
 from paramiko.buffered_pipe import PipeTimeout
 
+from src.ExperimentOptions import ExperimentOptions
 from src.GoogleCloudInfo import GoogleCloudInfo, cloud_info_list
 
 ComputeEngine = get_driver(Provider.GCE)
@@ -25,18 +26,6 @@ ex_id = ''.join(random.choice(string.ascii_lowercase) for i in range(8))  # Gene
 print(f"Experiment ID: binsearch")
 
 os.makedirs(f"raw/binsearch", exist_ok=True)
-
-
-class ExperimentOptions:
-    def __init__(self, cpu_cores: int, amount_ram: int, network: str, batch_size: int, amount_nodes: int):
-        self.cpu_cores = cpu_cores
-        self.amount_ram = amount_ram
-        self.network = network
-        self.batch_size = batch_size
-        self.amount_nodes = amount_nodes
-
-    def get_filename(self):
-        return f"nodes{self.amount_nodes}-cores{self.cpu_cores}-memory{self.amount_ram}-network{self.network}-batchsize{self.batch_size}.log"
 
 
 def run_command(ssh: SSHClient, command: str):
@@ -87,7 +76,7 @@ def execute_experiment(master: Master, slaves: List[SSHClient], options: Experim
 
     max_epochs = 2
     command = f"/home/{home_user}/bd/spark/bin/spark-submit --master spark://{master.privip}:7077 --driver-cores 4 " + \
-        f"--driver-memory 12G --total-executor-cores {options.amount_nodes * options.cpu_cores} --executor-cores {options.cpu_cores} --executor-memory {options.amount_ram}M " + \
+        f"--driver-memory 28G --total-executor-cores {options.amount_nodes * options.cpu_cores} --executor-cores {options.cpu_cores} --executor-memory {options.amount_ram}M " + \
         f"--py-files /home/{home_user}/bd/spark/lib/bigdl-0.11.0-python-api.zip,/home/{home_user}/bd/codes/{options.network}.py " + \
         f"--properties-file /home/{home_user}/bd/spark/conf/spark-bigdl.conf " + \
         f"--jars /home/{home_user}/bd/spark/lib/bigdl-SPARK_2.3-0.11.0-jar-with-dependencies.jar " + \
@@ -181,28 +170,23 @@ def main():
 
     master_ssh, slaves = connect_master_slaves()
 
-    for cpu_cores in [2, 4]:
+    for cpu_cores in [4]:
         for amount_ram in [2048, 4096]:
             for network in ['bi-rnn', 'lenet5']:
                 for batch_size in [64, 256]:
                     for nodes in [16, 32]:
-                        # subprocess.call('start /wait venv\\scripts\\python src\\create-all-servers.py', shell=True)
                         print(f"Retrieved master and {len(slaves)} slaves.")
+                        for slave in slaves:
+                            run_command(slave, f'/home/am72ghiassi/bd/spark/sbin/stop-slave.sh')
                         run_command(master_ssh.ssh, '/home/am72ghiassi/bd/spark/sbin/stop-master.sh')
                         import time
                         time.sleep(5)
                         run_command(master_ssh.ssh, '/home/am72ghiassi/bd/spark/sbin/start-master.sh')
                         for slave in slaves:
-                            run_command(slave, f'/home/am72ghiassi/bd/spark/sbin/stop-slave.sh')
-                        for slave in slaves:
                             run_command(slave, f'/home/am72ghiassi/bd/spark/sbin/start-slave.sh spark://{master_ssh.pubip}:7077')
                         print(f"Current config: cpu cores {cpu_cores} amount_ram {amount_ram} network {network} batchsize {batch_size} nodes {nodes}")
                         options = ExperimentOptions(cpu_cores, amount_ram, network, batch_size, nodes)
                         execute_experiment(master_ssh, slaves, options)
-                    # # result = perform_binary_search(master_ssh, slaves, options)
-                    #
-                    # with io.open('results.csv', encoding='utf-8', mode='a') as file:
-                    #     file.write("%s,%s,%s,%s,%s\n" % (cpu_cores, amount_ram, network, batch_size, result))
 
 
 if __name__ == '__main__':

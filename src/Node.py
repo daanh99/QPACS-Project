@@ -29,7 +29,7 @@ class Node(ABC):
                 self.destroy()
                 raise SSHNodeError("Your region was not found!")
         self.disk = self.driver.create_volume(40, f"boot-{self.name}", image=self.cloud_info.disk_name, location=location)
-        self.node = self.driver.create_node(name, 'n2-standard-4', None, location=location, ex_boot_disk=self.disk)
+        self.node = self.driver.create_node(name, 'e2-highmem-4', None, location=location, ex_boot_disk=self.disk)
         self.driver.wait_until_running([self.node])
         self.pubip = self.node.public_ips[0]
         self.privip = self.node.private_ips[0]
